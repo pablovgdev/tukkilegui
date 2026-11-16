@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colombia, del Pacífico al Caribe · Tukki Legui</title>
+<meta name="description" content="Viaje organizado a Colombia para mujeres LBTQ+. Del 28 de septiembre al 12 de octubre: Eje Cafetero, Medellín, Nuquí y Cartagena.">
+<link rel="icon" type="image/png" href="../../assets/favicon.png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<meta name="theme-color" content="#CF4A2B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,900&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:Avigea;src:url("../../assets/fonts/Avigea.woff2") format("woff2");
+  font-weight:400 900;font-display:swap}
+:root{
+  --orange:#CF4A2B;
+  --orange-dark:#B03A1E;
+  --cream:#F4F0E7;
+  --cream-soft:#FAF7F2;
+  --ink:#2E312D;
+  --ink-soft:#4A4A46;
+  --tan:#E3C9BF;
+  --sans:"Helvetica Neue",Helvetica,Arial,"Liberation Sans",sans-serif;
+  --serif:Avigea,"Playfair Display",Georgia,serif;
+  --max:1040px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:86px}
+body{margin:0;background:var(--cream-soft);color:var(--ink);
+  font:400 16px/1.55 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.02;margin:0;font-weight:900}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 30px;position:relative;z-index:1}
+.narrow{max-width:820px}
+.just{text-align:justify;hyphens:auto}
+
+/* ── decoración: ondas ──────────────────────────── */
+.olas{position:absolute;pointer-events:none;z-index:0}
+.olas.oro{top:0;right:0;width:clamp(80px,9vw,132px);height:auto}
+.olas.agua{bottom:34px;right:6%;width:clamp(96px,11vw,145px);height:auto}
+@media(max-width:700px){.olas.oro{width:70px}.olas.agua{right:16px;width:96px}}
+
+/* ── nav ────────────────────────────────────────── */
+nav{position:sticky;top:0;z-index:60;background:rgba(250,247,242,.94);
+  --nada:0;
+  backdrop-filter:blur(10px);border-bottom:1px solid #e7e1d6}
+nav .wrap{display:flex;align-items:center;gap:30px;height:86px;max-width:1180px;
+  position:relative}
+nav .brand img{height:60px;width:auto}
+nav ul{display:flex;gap:24px;list-style:none;margin:0 0 0 auto;padding:0;
+  font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+nav a{text-decoration:none;color:var(--ink-soft)}
+nav a:hover{color:var(--orange)}
+.btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:700;
+  padding:11px 22px;border-radius:999px;font-size:14px;letter-spacing:.02em;transition:background .18s}
+.btn:hover{background:var(--orange-dark)}
+.btn-ghost{background:transparent;border:1.5px solid #fff;color:#fff;padding:11px 26px}
+.btn-ghost:hover{background:#fff;color:var(--orange)}
+.hamburguesa{display:none;margin-left:14px;width:42px;height:42px;padding:10px 8px;
+  background:none;border:0;cursor:pointer;flex-direction:column;justify-content:space-between}
+.hamburguesa span{display:block;width:100%;height:2px;background:var(--ink);border-radius:2px;
+  transition:transform .22s,opacity .18s}
+nav.abierto .hamburguesa span:nth-child(1){transform:translateY(10px) rotate(45deg)}
+nav.abierto .hamburguesa span:nth-child(2){opacity:0}
+nav.abierto .hamburguesa span:nth-child(3){transform:translateY(-10px) rotate(-45deg)}
+@media(max-width:900px){
+  .hamburguesa{display:flex}
+  nav .wrap{gap:12px}
+  nav ul{position:absolute;left:0;right:0;top:100%;margin:0;padding:10px 30px 22px;
+    flex-direction:column;gap:0;background:var(--cream-soft);
+    border-bottom:1px solid #e7e1d6;box-shadow:0 18px 30px -22px rgba(0,0,0,.35);
+    display:none}
+  nav.abierto ul{display:flex}
+  nav ul li{border-top:1px solid #ece6db}
+  nav ul li:first-child{border-top:0}
+  nav ul a{display:block;padding:15px 2px;font-size:14px}
+  nav .btn{margin-left:auto;padding:10px 18px;font-size:13px}
+}
+@media(max-width:420px){nav .btn{padding:9px 14px;font-size:12px}
+  nav .brand img{height:48px}}
+
+/* ── portada ────────────────────────────────────── */
+.portada{background:var(--cream-soft);padding:54px 0 0;position:relative}
+.portada .wrap{max-width:1060px;padding:0 30px}
+.portada h1{font-size:clamp(38px,13.6vw,170px);color:var(--orange);letter-spacing:-.008em}
+.portada .l2{font-family:var(--sans);font-weight:300;font-size:clamp(15px,4.3vw,50px);
+  letter-spacing:0;margin:6px 0 0;line-height:1.06;color:var(--ink)}
+.portada .l3{font-family:var(--sans);font-weight:900;font-size:clamp(14.5px,4.05vw,45px);
+  letter-spacing:-.028em;line-height:1.06;margin:2px 0 0;color:var(--ink)}
+.portada figure{max-width:1060px;margin:28px auto 0;padding:0 30px}
+.portada figure img{width:100%;aspect-ratio:1.14;height:auto;object-fit:cover;
+  object-position:58% 40%;border-radius:20px}
+
+/* ── intro ──────────────────────────────────────── */
+.intro{padding:62px 0 70px;position:relative}
+.intro p{margin:0;font-size:17px;font-style:italic;line-height:1.5}
+.intro p b{font-style:italic}
+.mark{background:var(--orange);color:#fff;padding:3px 8px;font-weight:700;display:inline-block;margin-bottom:12px}
+.intro .cierre{color:var(--orange);font-weight:700;font-style:normal;margin-top:20px;line-height:1.4}
+
+/* ── imagínate ──────────────────────────────────── */
+.imagina{background:var(--cream);padding:78px 0 0;position:relative;overflow:hidden}
+.imagina h2{font-family:var(--sans);font-weight:800;letter-spacing:-.015em;
+  font-size:clamp(21px,3.5vw,33px);color:var(--orange);margin-bottom:26px}
+.imagina ul{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.imagina li{padding-left:26px;position:relative;font-size:16px}
+.imagina li::before{content:"";position:absolute;left:3px;top:.62em;width:6px;height:6px;
+  border-radius:50%;background:var(--ink)}
+.imagina .cierre{margin:30px 0 0;font-style:italic;color:var(--ink);font-size:16.5px;line-height:1.72}
+.imagina .cierre span{background:#FBE8E1;padding:3px 7px;box-decoration-break:clone}
+.imagina .cierre b{font-style:italic;font-weight:800;color:var(--ink)}
+.imagina-fotos{position:relative;margin-top:104px}
+.imagina-fotos .fondo{width:100%;height:min(52vw,660px);object-fit:cover;object-position:center 62%}
+.imagina-fotos .encima{position:absolute;right:6.5%;top:-104px;z-index:2;
+  width:min(23vw,300px);height:auto;box-shadow:-16px 22px 0 #fff}
+.imagina-fotos .marca{position:absolute;left:6.5%;bottom:24px;color:rgba(255,255,255,.8);
+  font-weight:800;letter-spacing:.14em;font-size:13px}
+@media(max-width:760px){.imagina-fotos{margin-top:150px}
+  .imagina-fotos .encima{width:40vw;top:-80px;box-shadow:-10px 14px 0 #fff}
+  .imagina-fotos .fondo{height:64vw}}
+
+/* ── la raíz ────────────────────────────────────── */
+.banda{display:block;width:calc(100% - 60px);max-width:1100px;height:auto;
+  margin:56px auto 0;border-radius:20px}
+.raiz{padding:52px 30px 78px}
+.raiz .head{padding-top:48px}
+.eyebrow{font-family:var(--serif);font-size:23px;color:#9a9285;margin:0 0 4px}
+.raiz h2{font-size:clamp(24px,4.8vw,50px);color:var(--orange)}
+.raiz h2 span{color:var(--ink)}
+.raiz .cols{columns:2;column-gap:46px;margin-top:26px;font-size:14.5px;line-height:1.55}
+.raiz .cols p{margin:0 0 13px;break-inside:avoid;text-align:justify;hyphens:auto}
+.raiz .hl{color:var(--orange);font-weight:700}
+@media(max-width:760px){.raiz .cols{columns:1;font-size:15.5px}}
+
+/* ── valores ────────────────────────────────────── */
+.valores{background:var(--cream);padding:0 0 82px;position:relative;overflow:hidden}
+.valores .marca-agua{position:absolute;right:-5%;bottom:-6%;width:min(48%,540px);
+  opacity:.06;pointer-events:none;z-index:0}
+.valores-hero{position:relative}
+.valores-hero img{width:100%;height:min(48vw,410px);object-fit:cover;object-position:center 26%}
+.valores-hero h2{position:absolute;left:6%;bottom:22px;color:#fff;
+  font-size:clamp(23px,5.6vw,62px);text-shadow:0 2px 26px rgba(0,0,0,.4)}
+.valores-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,auto);
+  grid-auto-flow:column;gap:36px 54px;padding-top:64px;position:relative;z-index:1}
+.valor{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start}
+.valor .num{font-family:var(--serif);font-size:50px;font-weight:900;color:var(--tan);line-height:.9}
+.valor h3{background:var(--orange);color:#fff;font-family:var(--sans);font-size:14.5px;
+  font-weight:700;padding:7px 11px;margin-bottom:11px;line-height:1.25}
+.valor.claro h3{background:#fff;color:var(--orange)}
+.valor p{margin:0;font-size:14px;line-height:1.55;color:var(--ink-soft);text-align:justify;hyphens:auto}
+@media(max-width:760px){.valores-grid{grid-template-columns:1fr;grid-template-rows:none;
+  grid-auto-flow:row;padding-top:52px;gap:34px}
+  .valores .marca-agua{display:none}}
+
+/* ── portada ruta ───────────────────────────────── */
+.ruta{padding:52px 30px 8px}
+.ruta-caja{position:relative;max-width:1100px;margin:0 auto;border-radius:20px;overflow:hidden;background:#1a1a1a}
+.ruta-caja img{width:100%;aspect-ratio:1.22;height:auto;object-fit:cover;object-position:62% center}
+.ruta-caja::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(100deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.44) 34%,
+    rgba(0,0,0,.12) 56%,rgba(0,0,0,0) 70%)}
+.ruta .marco{position:absolute;z-index:2;left:5%;top:9%;bottom:9%;width:min(50%,470px);
+  border:1.5px solid rgba(255,255,255,.8);border-right:0}
+.ruta .t{position:absolute;z-index:3;left:9.5%;top:50%;transform:translateY(-50%);
+  color:#fff;width:min(46%,430px)}
+.ruta h2{font-size:clamp(28px,6.6vw,74px);text-shadow:0 2px 26px rgba(0,0,0,.5)}
+.ruta .t span{display:block;margin-top:14px;font-family:var(--sans);font-weight:700;
+  font-size:clamp(12px,1.7vw,19px);letter-spacing:.07em;line-height:1.3;
+  text-shadow:0 1px 14px rgba(0,0,0,.7)}
+@media(max-width:640px){.ruta .marco{width:64%}.ruta .t{width:60%}}
+
+/* ── destinos ───────────────────────────────────── */
+.destino{padding:74px 0;position:relative;overflow:hidden;border-bottom:1px solid #ebe5da}
+.destino:nth-of-type(even){background:var(--cream)}
+.destino h2{font-size:clamp(27px,5.6vw,58px);color:var(--orange)}
+.destino .claim{font-weight:700;font-size:17px;margin:14px 0 1px}
+.destino .fechas{color:#928c80;font-size:14px;margin:0 0 24px}
+.destino p{margin:0 0 13px;font-size:14.5px;line-height:1.6;text-align:justify;hyphens:auto}
+.cuerpo{display:grid;grid-template-columns:.92fr 1.08fr;gap:34px;margin-top:26px;align-items:start}
+.cuerpo .col{display:flex;flex-direction:column;gap:22px}
+.cuerpo .col>div>p{margin:0 0 13px}
+.cuerpo .col>div>p:last-child{margin-bottom:0}
+.rasgada{width:100%;height:auto;
+  clip-path:polygon(0 1.6%,6% .3%,13% 2.1%,24% .6%,31% 2.4%,42% .9%,53% 2.2%,
+    64% .4%,72% 2.3%,83% .7%,91% 2%,100% .5%,100% 98.2%,92% 99.6%,84% 97.7%,
+    73% 99.4%,65% 97.6%,54% 99.3%,44% 97.8%,33% 99.5%,25% 97.6%,14% 99.2%,6% 97.9%,0 99.4%)}
+.redonda{width:100%;height:auto;border-radius:16px}
+.destino .marca{position:absolute;right:7%;bottom:24px;color:#cfc8bb;
+  font-weight:800;letter-spacing:.14em;font-size:12.5px}
+@media(max-width:760px){.cuerpo{grid-template-columns:1fr}}
+
+/* ── presupuesto ────────────────────────────────── */
+.presu{padding:78px 0;position:relative}
+.presu h2{font-size:clamp(29px,6.4vw,68px);letter-spacing:-.01em}
+.pill{display:inline-block;background:var(--orange);color:#fff;border-radius:999px;
+  padding:8px 22px;font-weight:700;margin:16px 0 4px;font-size:15px}
+.pill b{font-weight:700}
+.dividido{color:#928c80;font-size:14px;margin:0}
+.bloque{background:var(--cream);padding:30px 34px;margin-top:22px;border-radius:16px}
+.bloque:nth-of-type(even){background:#fff;border:1px solid #ece6db}
+.bloque h3{font-family:var(--sans);font-size:21px;font-weight:800;letter-spacing:.02em}
+.bloque .sub{color:var(--orange);font-weight:700;font-style:italic;margin:5px 0 15px;font-size:15px}
+.bloque ul{margin:0;padding-left:19px;font-size:14px;line-height:1.6;color:var(--ink-soft)}
+.bloque li{margin-bottom:7px;text-align:justify;hyphens:auto}
+.bloque>p{font-size:14.5px}
+.bonus{background:rgba(207,74,43,.07);border-radius:10px;padding:14px 16px;margin-top:14px;font-size:13.5px;
+  line-height:1.6;text-align:justify}
+.presu-foto{width:100%;height:min(30vw,240px);object-fit:cover;object-position:center 60%}
+
+/* ── cta ────────────────────────────────────────── */
+.cta{background:var(--orange);color:#fff;padding:74px 0}
+.cta h2{font-size:clamp(26px,5.8vw,56px)}
+.cta .solicita{font-weight:700;font-size:19px;margin:24px 0 16px}
+.cta .botones{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:34px}
+.cta .o{opacity:.85}
+.caja{border:1.5px solid rgba(255,255,255,.55);border-radius:22px;padding:26px 30px}
+.caja h3{font-size:25px;margin-bottom:12px}
+.caja p{margin:0 0 7px;font-size:15px}
+
+/* ── isa ────────────────────────────────────────── */
+.isa{background:var(--cream);padding:54px 30px 80px}
+.isa>img{width:100%;max-width:1100px;height:auto;margin:0 auto;border-radius:20px}
+.isa .tit{margin-top:-40px;position:relative;z-index:2;text-align:right}
+.isa .tit h2{display:inline-block;background:var(--orange);color:#fff;
+  padding:4px 20px 8px;font-size:clamp(24px,5.2vw,52px)}
+.isa .tit .sub{display:block;text-align:right;font-family:var(--serif);font-style:italic;
+  font-weight:700;font-size:clamp(19px,3.1vw,32px);margin-top:20px}
+.isa h3{font-family:var(--sans);font-size:26px;font-weight:800;margin:28px 0 14px}
+.isa p{margin:0 0 13px;font-size:14.5px;line-height:1.6;text-align:justify;hyphens:auto}
+.isa .final{color:var(--orange);font-weight:700}
+
+/* ── faq ────────────────────────────────────────── */
+.faq{background:var(--cream-soft)}
+.faq-bloque{display:grid;grid-template-columns:.38fr 1fr;align-items:stretch}
+.faq-bloque.invertido{grid-template-columns:1fr .38fr}
+.faq-foto{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+.faq-texto{padding:72px 7% 78px;max-width:840px}
+.faq-bloque.invertido .faq-texto{margin-left:auto}
+.faq h2{font-size:clamp(28px,5.6vw,56px);color:var(--orange);margin-bottom:14px}
+.faq h2 span{color:var(--ink)}
+.faq .q{margin-top:32px}
+.faq .q h4{display:inline-block;background:#fff;color:var(--orange);font-family:var(--sans);
+  font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.01em;
+  padding:7px 13px;border-radius:6px;line-height:1.45;box-decoration-break:clone}
+.faq .q p{font-size:14px;line-height:1.6;margin:14px 0 0;color:var(--ink-soft);
+  padding:0 13px;text-align:justify;hyphens:auto}
+.faq-pie{margin-top:56px;text-align:center}
+.faq-pie img{width:150px;margin:26px auto 0;opacity:.9}
+@media(max-width:820px){
+  .faq-bloque,.faq-bloque.invertido{grid-template-columns:1fr}
+  .faq-foto{height:220px}
+  .faq-texto{padding:54px 30px}
+  .faq-bloque.invertido .faq-foto{order:-1}}
+
+/* ── cierre ─────────────────────────────────────── */
+.cierre-final{background:var(--cream);padding:26px}
+.cierre-final .marco{position:relative;overflow:hidden;border-radius:20px;
+  max-width:960px;margin:0 auto}
+.cierre-final .marco>img{width:100%;height:auto}
+.cierre-final .marco>img.logo{position:absolute;left:50%;top:7%;transform:translateX(-50%);
+  width:min(330px,44%);height:auto}
+.firma{position:absolute;right:10%;top:29%;font-family:Caveat,cursive;font-size:clamp(20px,2.6vw,30px);
+  color:#fff;transform:rotate(-6deg)}
+@media(max-width:560px){.wrap{padding-left:20px;padding-right:20px}.bloque{padding:24px 20px}}
+.pie{background:var(--orange);color:#fff;padding:64px 0 28px}
+.pie .wrap{max-width:1100px}
+.pie-cols{display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:44px}
+.pie-marca img{width:186px;height:auto;margin-bottom:18px}
+.pie-marca p{margin:0;max-width:30ch;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.82)}
+.pie h4{font-family:var(--sans);font-size:11.5px;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:rgba(255,255,255,.6);margin:0 0 16px}
+.pie ul{list-style:none;margin:0;padding:0;display:grid;gap:11px;font-size:14.5px}
+.pie a{color:#fff;text-decoration:none}
+.pie a:hover{text-decoration:underline;text-underline-offset:3px}
+.pie .contacto a{display:inline-flex;align-items:center;gap:9px}
+.pie .contacto svg{width:17px;height:17px;flex:none;fill:currentColor}
+.pie-fin{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+  gap:14px 30px;margin-top:52px;padding-top:22px;border-top:1px solid rgba(255,255,255,.22)}
+.pie-fin small{font-size:12.5px;color:rgba(255,255,255,.72)}
+.pie-fin nav{position:static;background:none;backdrop-filter:none;border:0;
+  display:flex;flex-wrap:wrap;gap:8px 22px;font-size:12.5px}
+.pie-fin nav a{color:rgba(255,255,255,.82)}
+@media(max-width:820px){.pie-cols{grid-template-columns:1fr 1fr;gap:38px}
+  .pie-marca{grid-column:1/-1}}
+@media(max-width:520px){.pie{padding:48px 0 24px}.pie-cols{grid-template-columns:1fr;gap:32px}
+  .pie-fin{margin-top:38px}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<g id="olas-oro" fill="none" stroke="#E3D2A4" stroke-width="1.5" stroke-linecap="round"><path d="M0 9 q 16.00 -11 32.00 0 q 16.00 11 32.00 0 q 16.00 -11 32.00 0 q 16.00 11 32.00 0"/><path d="M0 40 q 16.00 -11 32.00 0 q 16.00 11 32.00 0 q 16.00 -11 32.00 0 q 16.00 11 32.00 0"/><path d="M0 71 q 16.00 -11 32.00 0 q 16.00 11 32.00 0 q 16.00 -11 32.00 0 q 16.00 11 32.00 0"/><path d="M0 102 q 16.00 -11 32.00 0 q 16.00 11 32.00 0 q 16.00 -11 32.00 0 q 16.00 11 32.00 0"/><path d="M0 133 q 16.00 -11 32.00 0 q 16.00 11 32.00 0 q 16.00 -11 32.00 0 q 16.00 11 32.00 0"/><path d="M0 164 q 16.00 -11 32.00 0 q 16.00 11 32.00 0 q 16.00 -11 32.00 0 q 16.00 11 32.00 0"/><path d="M0 195 q 16.00 -11 32.00 0 q 16.00 11 32.00 0 q 16.00 -11 32.00 0 q 16.00 11 32.00 0"/><path d="M0 226 q 16.00 -11 32.00 0 q 16.00 11 32.00 0 q 16.00 -11 32.00 0 q 16.00 11 32.00 0"/><path d="M0 257 q 16.00 -11 32.00 0 q 16.00 11 32.00 0 q 16.00 -11 32.00 0 q 16.00 11 32.00 0"/><path d="M0 288 q 16.00 -11 32.00 0 q 16.00 11 32.00 0 q 16.00 -11 32.00 0 q 16.00 11 32.00 0"/><path d="M0 319 q 16.00 -11 32.00 0 q 16.00 11 32.00 0 q 16.00 -11 32.00 0 q 16.00 11 32.00 0"/><path d="M0 350 q 16.00 -11 32.00 0 q 16.00 11 32.00 0 q 16.00 -11 32.00 0 q 16.00 11 32.00 0"/><path d="M0 381 q 16.00 -11 32.00 0 q 16.00 11 32.00 0 q 16.00 -11 32.00 0 q 16.00 11 32.00 0"/></g>
+<g id="olas-agua" fill="none" stroke="#CF4A2B" stroke-width="1.4" stroke-linecap="round"><path d="M0 3.0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0"/><path d="M0 10.5 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0"/><path d="M0 18.0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0"/><path d="M0 25.5 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0"/><path d="M0 33.0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0 q 4.86 -3.2 9.71 0 q 4.86 3.2 9.71 0"/></g>
+</defs></svg>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="../../assets/logo.png" alt="Tukki Legui"></a>
+    <ul id="menu">
+      <li><a href="#viaje">El viaje</a></li>
+      <li><a href="#raiz">La raíz</a></li>
+      <li><a href="#ruta">La ruta</a></li>
+      <li><a href="#presupuesto">Presupuesto</a></li>
+      <li><a href="#isa">Quién soy</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn" href="#reservar">Solicita tu plaza</a>
+    <button class="hamburguesa" aria-expanded="false" aria-controls="menu"
+            aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="portada" id="top">
+  <div class="wrap">
+    <h1>COLOMBIA</h1>
+    <p class="l2">DEL PACÍFICO AL CARIBE</p>
+    <p class="l3">PARA MUJERES LBTQ+</p>
+  </div>
+  <figure><img src="../../assets/hero-ballena.jpg" alt="Cola de ballena jorobada sobre el Pacífico colombiano"></figure>
+</header>
+
+<section class="intro" id="viaje">
+  <svg class="olas agua" viewBox="0 0 140 42"><use href="#olas-agua"/></svg>
+  <div class="wrap narrow">
+    <p><span class="mark">Hace tiempo que sabes el tipo de viaje que te apetece.</span></p>
+    <p>Con más <b>aventura</b>, pero a la vez tranquilo.</p>
+    <p><b>Conectando</b> con personas y lugares de verdad, pero sin forzar nada.</p>
+    <p>Conociendo otras <b>culturas</b>, pero sabiendo que no todo vale para hacerlo.</p>
+    <p class="cierre">Un viaje organizado, sí, pero más como un viaje entre amigas que como
+      el típico donde todo está medido al milímetro.</p>
+  </div>
+</section>
+
+<section class="imagina">
+  <svg class="olas oro" viewBox="0 0 130 400"><use href="#olas-oro"/></svg>
+  <div class="wrap narrow">
+    <h2>Y ahora imagínate, que durante dos semanas…</h2>
+    <ul>
+      <li>Viajas con un grupo de mujeres bibolleras con las que <b>crear comunidad</b>.</li>
+      <li>Terminas el día entrenando con el <b>grupo de deporte de mujeres</b> de Nuquí mientras atardece sobre el Pacífico.</li>
+      <li>Recorres una <b>finca cafetera</b> mientras descubres por qué el café forma parte de la identidad paisa y de la vida cotidiana de quienes viven aquí.</li>
+      <li>Compartes un encuentro con una <b>asociación LGTBQIA+</b> de Cartagena para conocer cómo se vive la diversidad al otro lado del Atlántico.</li>
+      <li>Escuchas el <b>soplido de una ballena jorobada</b> antes incluso de verla aparecer (de esto sé un poco… luego te cuento por qué).</li>
+      <li>En definitiva, un viaje para conocer Colombia, pero también para volver a casa con otra forma de mirar el mundo.</li>
+    </ul>
+    <p class="cierre"><span>Vamos, que si hace un momento no te apetecía hacer ningún viaje…</span><br>
+      <span><b>a lo mejor ahora un poquito sí.</b></span></p>
+  </div>
+  <div class="imagina-fotos">
+    <img class="fondo" src="../../assets/cafetal.jpg" alt="Cafetal en el Eje Cafetero">
+    <img class="encima" src="../../assets/cafe-granos.jpg" alt="Granos de café en distintos tuestes">
+    <span class="marca">TUKKI LEGUI</span>
+  </div>
+</section>
+
+<img class="banda" src="../../assets/raiz-banner.jpg" alt="Isa en una hamaca en Nuquí">
+
+<section class="raiz" id="raiz">
+  <div class="wrap head">
+    <p class="eyebrow">La raíz de todo</p>
+    <h2>Hace unos años Colombia me recordó<br><span>la forma de viajar con la que más conecto.</span></h2>
+    <div class="cols">
+      <p>Siempre me ha gustado viajar despacio y conocer a las personas que viven en los lugares que visito. Pero, como a muchas, a veces también me puede esa sensación de querer verlo todo.</p>
+      <p>Fue en <b>Nuquí</b>, un pequeño pueblo del Pacífico colombiano, donde volví a recordar que los viajes que más me marcan no son aquellos en los que más lugares acumulo, sino en los que vivo más presente.</p>
+      <p>Llegué para hacer un voluntariado sobre conservación marina y avistamiento responsable de ballenas.</p>
+      <p>Creía que el viaje iba de ellas.</p>
+      <p><b>Y sí. Me enamoré de las ballenas…</b></p>
+      <p><b>Pero lo que realmente me cambió fue todo lo que ocurría cuando no las estaba buscando.</b></p>
+      <p>Había mañanas de playa y libros.</p>
+      <p>Días en los que salíamos en lancha sin saber si tendríamos la suerte de encontrarlas. Hasta que, de repente, un soplido rompía el silencio y una columna blanca se elevaba sobre el mar. Entonces sabías que estaban cerca. Las buscabas con la mirada y, cuando aparecían, entendías que admirarlas también era respetar su espacio.</p>
+      <p>Las ballenas habían puesto a Nuquí en el mapa. Muchas llegábamos buscándolas. Pero acabábamos enamorándonos del Pacífico.</p>
+      <p>Por las tardes entrenaba con el grupo de deporte que organiza Víctor en el malecón. Me encantaba ver cómo las <b>mujeres del pueblo</b> dejaban a un lado el trabajo, la casa y las responsabilidades para hacer sentadillas y correr juntas por la playa.</p>
+      <p>Después podía caer una hamburguesa de pescado donde Doña y, muchas noches, una hoguera con personas que, casi sin darte cuenta, habían dejado de ser desconocidas.</p>
+      <p><b>Fue allí donde volví a conectar con la forma de viajar que más me llena.</b></p>
+      <p><b>Con menos prisa. Escuchando más.</b></p>
+      <p><b>Queriendo entender antes que consumir lugares.</b></p>
+      <p>Volviendo a casa con más preguntas que respuestas.</p>
+      <p>Entonces tuve claro que, si algún día organizaba viajes, quería que se parecieran mucho más a aquel mes que a cualquier itinerario donde lo importante fuera verlo todo.</p>
+      <p>Hay una cosa que me sigue fascinando de las ballenas jorobadas: <b>siempre vuelven al lugar donde nacieron.</b></p>
+      <p>Yo solo he estado una vez en Nuquí.</p>
+      <p>Pero entiendo perfectamente esa necesidad de volver.</p>
+      <p>Supongo que por eso el símbolo de Tukki Legui es una cola de ballena.</p>
+      <p>Y supongo también que por eso este tenía que ser el primer viaje del proyecto.</p>
+      <p>Y quizá eso es también lo que busco cuando organizo un viaje: <span class="hl">que no solo descubras un lugar, sino que encuentres una forma de viajar a la que siempre quieras volver.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="valores">
+  <div class="valores-hero">
+    <img src="../../assets/valores-hero.jpg" alt="Mural de dos mujeres afrocolombianas">
+    <h2>Lo que quiero<br>que vivamos juntas</h2>
+  </div>
+  <img class="marca-agua" src="../../assets/logo.png" alt="" aria-hidden="true">
+  <div class="wrap valores-grid">
+    <div class="valor"><span class="num">1.</span><div>
+      <h3>Un viaje diseñado desde una mirada feminista y LBTQ+</h3>
+      <p>Durante el recorrido trataremos de conocer la realidad LGTBQIA+ de la mano de asociaciones o personas locales y de acercarnos también a la mirada de las mujeres que viven allí. Y, por supuesto, cuidaremos que el grupo sea un espacio donde todas podamos viajar tranquilas, siendo nosotras mismas.</p>
+    </div></div>
+    <div class="valor"><span class="num">2.</span><div>
+      <h3>Una aventura con margen para improvisar</h3>
+      <p>Hay un recorrido preparado, pero no quiero un viaje donde todo esté medido al minuto. Si encontramos un plan que nos gusta más, nos apetece quedarnos un rato más en un sitio o simplemente cambiar el rumbo, lo haremos siempre que sea posible.</p>
+    </div></div>
+    <div class="valor"><span class="num">3.</span><div>
+      <h3>Más confianza e independencia para seguir viajando</h3>
+      <p>Me encantaría que este viaje también te diera la confianza para seguir explorando el mundo. Sola, acompañada o como tú prefieras. Compartiré recursos, aprendizajes y pequeños trucos que a mí me han servido para viajar con más seguridad y autonomía.</p>
+    </div></div>
+    <div class="valor claro"><span class="num">4.</span><div>
+      <h3>Viajar también es cuestionarnos</h3>
+      <p>Durante el viaje intentaremos hacernos preguntas sobre la forma en la que viajamos y acercarnos a otras realidades con curiosidad y respeto. Trataremos de dejar a un lado esa mirada etnocéntrica con la que muchas hemos crecido y priorizaremos iniciativas locales y comunitarias que permitan conocer el destino desde otro lugar.</p>
+    </div></div>
+    <div class="valor claro"><span class="num">5.</span><div>
+      <h3>Una comunidad viajera, bibollera y con espíritu crítico</h3>
+      <p>Me encantaría que Tukki Legui fuera mucho más que un viaje. Ojalá entre todas construyamos una comunidad de mujeres con ganas de viajar, cuestionarse cosas, compartir experiencias y seguir organizando aventuras juntas cuando volvamos a casa.</p>
+    </div></div>
+  </div>
+</section>
+
+<div class="ruta" id="ruta">
+  <div class="ruta-caja">
+    <img src="../../assets/ruta-hero.jpg" alt="Palenquera en Cartagena de Indias">
+    <div class="marco"></div>
+    <div class="t">
+      <h2>NUESTRA<br>RUTA</h2>
+      <span>DEL PACÍFICO<br>AL CARIBE…</span>
+    </div>
+  </div>
+</div>
+
+<section class="destino">
+  <svg class="olas oro" viewBox="0 0 130 400"><use href="#olas-oro"/></svg>
+  <div class="wrap">
+    <h2>Eje Cafetero</h2>
+    <p class="claim">Empezamos sin correr</p>
+    <p class="fechas">(del 28 de septiembre al 02 de octubre)</p>
+    <p>Quería que el viaje empezara en el Eje Cafetero porque creo que invita a hacer justo lo contrario de lo que solemos hacer cuando viajamos: bajar un poco el ritmo.</p>
+    <p>Nada más llegar nos iremos a las <b>termas</b> de Santa Rosa de Cabal. Después de un día de viaje, me parece la mejor forma de empezar: relajarnos, quitarnos el cansancio del cuerpo y empezar a conocernos entre todas.</p>
+    <p>Durante estos días conoceremos algunos de los <b>pueblos paisas</b> más bonitos, visitaremos una <b>finca familiar cafetera liderada por Doña Nelly y su nieto</b> para entender por qué el café forma parte de la identidad de esta región y todo el trabajo que hay detrás de cada taza. También jugaremos alguna que otra partida de <b>tejo</b> (el deporte nacional no oficial de Colombia) mientras nos tomamos unas polas, recorreremos el <b>Valle del Cocora y haremos mountain bike por La Carbonera</b>, donde se encuentra el bosque de palmas de cera más denso del mundo (ya puedes ir desempolvando la bici de tu infancia).</p>
+    <div class="cuerpo">
+      <div class="col">
+        <img class="rasgada" src="../../assets/eje-3.jpg" alt="Preparación de café en la finca de Doña Nelly">
+        <img class="redonda" src="../../assets/eje-2.jpg" alt="Interior del ecohotel cerca de Salento">
+      </div>
+      <div class="col">
+        <div><p>He elegido un ecohotel rodeado de naturaleza, muy cerca de Salento. Así podremos disfrutar del ambiente del pueblo sin renunciar a tener un lugar tranquilo donde descansar y seguir compartiendo el viaje entre todas.</p></div>
+        <img class="redonda" src="../../assets/eje-1.jpg" alt="Valle del Cocora">
+      </div>
+    </div>
+    <span class="marca">TUKKI LEGUI</span>
+  </div>
+</section>
+
+<section class="destino">
+  <svg class="olas oro" viewBox="0 0 130 400"><use href="#olas-oro"/></svg>
+  <div class="wrap">
+    <h2>Medellín</h2>
+    <p class="claim">Quiubo pues.</p>
+    <p class="fechas">(del 2 al 4 de octubre)</p>
+    <p>Solo estaremos un par de días en Medellín. Este viaje tenía otros protagonistas, pero me parecía un error pasar por Colombia sin conocer una ciudad tan sumamente impresionante.</p>
+    <div class="cuerpo">
+      <div class="col">
+        <img class="rasgada" src="../../assets/med-3.jpg" alt="Bandeja paisa">
+        <img class="redonda" src="../../assets/med-2.jpg" alt="Baile urbano en la Comuna 13">
+      </div>
+      <div class="col">
+        <div><p>Pasearemos por algunos de sus barrios, visitaremos la <b>Comuna 13</b>, un barrio que ha pasado de ser uno de los lugares más castigados por la violencia a convertirse en un símbolo de transformación, donde el arte urbano cuenta buena parte de esa historia. También disfrutaremos de la gastronomía paisa antes de poner rumbo al Pacífico.</p>
+          <p>No vamos a conocer Medellín en dos días. La idea es llevarnos una primera impresión… y quedarnos con ganas de volver.</p></div>
+        <img class="redonda" src="../../assets/med-1.jpg" alt="Arte urbano en la Comuna 13">
+      </div>
+    </div>
+    <span class="marca">TUKKI LEGUI</span>
+  </div>
+</section>
+
+<section class="destino">
+  <svg class="olas oro" viewBox="0 0 130 400"><use href="#olas-oro"/></svg>
+  <div class="wrap">
+    <h2>Nuquí</h2>
+    <p class="claim">Ahora sí… llega el Pacífico.</p>
+    <p class="fechas">(de 4 al 8 de octubre)</p>
+    <p>Saldremos <b>dos veces a hacer un avistamiento responsable de ballenas jorobadas</b>, uno de los momentos que más ilusión me hace compartir. Un día navegaremos hacia el norte y otro hacia el sur de la costa del Chocó, recorriendo playas prácticamente vírgenes, cascadas y algunos de los rincones más espectaculares del Pacífico colombiano. Además de disfrutar de este espectáculo de la naturaleza, entenderemos por qué es tan importante observar a las ballenas desde el respeto y cuidar el entorno al que cada año regresan para aparearse y tener a sus crías.</p>
+    <p>Pero Nuquí, para mí, no son solo las ballenas.</p>
+    <p>Compartiremos tiempo con Jerry y conoceremos su <b>proyecto de turismo comunitario</b>. También visitaremos una <b>comunidad indígena Emberá</b> para acercarnos a su cultura y a su forma de entender el territorio. Lo haremos a través de una iniciativa gestionada por la propia comunidad.</p>
+    <div class="cuerpo">
+      <div class="col">
+        <img class="rasgada" src="../../assets/nuq-3.jpg" alt="Hoguera en la playa de Nuquí">
+        <img class="redonda" src="../../assets/nuq-1.jpg" alt="Ballena jorobada saltando frente a la costa del Chocó">
+      </div>
+      <div class="col">
+        <div><p>Conoceremos un espacio dedicado a los <b>saberes ancestrales del Pacífico</b>, compartiremos tiempo con mujeres de la zona para acercarnos a su mirada sobre este territorio y entenderemos un poquito mejor la historia y la realidad de una región donde conviven las culturas afrodescendiente e indígena.</p>
+          <p>Y, como no todo va a ser hacer actividades, también habrá tiempo para vivir Nuquí con calma: podremos unirnos al <b>grupo de deporte que organiza mi amigo Víctor en el malecón</b> (sí, las agujetas vienen incluidas), comer pescado recién hecho, hacer una <b>hoguera</b> en la playa si nos apetece o simplemente sentarnos a ver cómo cae la tarde.</p>
+          <p>Las ballenas son una parte muy importante de este viaje. Pero ojalá cuando nos vayamos también nos llevemos un pedacito de la historia, las personas y la forma de vivir de este lugar.</p></div>
+        <img class="redonda" src="../../assets/nuq-2.jpg" alt="Grupo de deporte del malecón de Nuquí">
+      </div>
+    </div>
+    <span class="marca">TUKKI LEGUI</span>
+  </div>
+</section>
+
+<section class="destino">
+  <svg class="olas oro" viewBox="0 0 130 400"><use href="#olas-oro"/></svg>
+  <div class="wrap">
+    <h2>Cartagena de Indias</h2>
+    <p class="claim">Un final con sabor a Caribe.</p>
+    <p class="fechas">(del 08 al 12 de octubre)</p>
+    <p>Terminaremos el viaje en Cartagena, una ciudad llena de vida, <b>música</b> en cada esquina y un calor que ya te aviso que no da tregua. Durante estos días pasearemos la ciudad, disfrutaremos de la gastronomía caribeña y tendremos tiempo para vivir su ambiente sin ir corriendo de un sitio a otro.</p>
+    <p>También tendremos un <b>encuentro con una asociación LGTBQIA+ local</b> para conocer cómo se vive la diversidad en Colombia, compartir experiencias y acercarnos al contexto social del país desde quienes lo viven en primera persona. Y, quién sabe, puede que se alargue en una buena fiesta.</p>
+    <div class="cuerpo">
+      <div class="col">
+        <img class="rasgada" src="../../assets/car-3.jpg" alt="Mural en Getsemaní, Cartagena">
+        <img class="redonda" src="../../assets/car-1.jpg" alt="Encuentro con una asociación LGTBQIA+ en Cartagena">
+      </div>
+      <div class="col">
+        <div><p>En Cartagena nos alojaremos todas juntas en una <b>casa</b>. Me apetecía mucho terminar el viaje así, porque creo que después de casi dos semanas compartiendo carretera, lanchas, cafés, agujetas y muchas conversaciones, una casa tiene mucho más sentido que un hotel. Así podremos cerrar el viaje con espacio para nosotras y a nuestro ritmo.</p>
+          <p>Y el último día no tendrá un plan cerrado. Prefiero que lo decidamos allí, cuando ya sepamos qué energía llevamos y qué nos apetece hacer como grupo. Igual acabamos en la playa, igual alguien se anima a hacer una inmersión de buceo o igual aparece un plan que ahora mismo ni imaginamos.</p>
+          <p><b>Aquí pondremos fin al primer viaje de muchos ♡.</b></p></div>
+        <img class="redonda" src="../../assets/car-2.jpg" alt="Cúpulas del centro histórico de Cartagena al atardecer, con la bahía al fondo">
+      </div>
+    </div>
+    <span class="marca">TUKKI LEGUI</span>
+  </div>
+</section>
+
+<section class="presu" id="presupuesto">
+  <svg class="olas oro" viewBox="0 0 130 400"><use href="#olas-oro"/></svg>
+  <div class="wrap">
+    <h2>PRESUPUESTO</h2>
+    <p class="pill">Viaje Colombia · <b>PRECIO TOTAL = 1.770€ + Gastos de viaje NO incluidos</b></p>
+    <p class="dividido">Dividido en 3 bloques:</p>
+
+    <div class="bloque">
+      <h3>BLOQUE I</h3>
+      <p class="sub">Inscripción, acompañamiento y diseño del viaje 970€ (IVA incluido).</p>
+      <ul>
+        <li>Coordinación.</li>
+        <li>Creación, planificación y diseño de toda la aventura.</li>
+        <li>Selección y creación del grupo.</li>
+        <li>Soporte y ayuda en todos los trámites previos al inicio de la expedición.</li>
+        <li>Asistencia en compra de vuelos, seguros de viaje y recomendaciones de equipaje.</li>
+        <li>Acceso a grupo privado de WhatsApp con todos los participantes.</li>
+        <li>Una sesión grupal de Zoom previa al inicio de la aventura.</li>
+        <li>Diseño y preparación de dinámicas y retos que se llevarán a cabo durante la expedición.</li>
+        <li>Documento con información importante para preparar la experiencia.</li>
+      </ul>
+      <p class="bonus"><b>Bonus incluido: ASESORÍA PRIMER VIAJE SOLA</b> (dos sesiones de 30 minutos), plantearemos cómo enfocar nuestro primer viaje sola (siempre que sea algo que te apetezca, claro). Hablaremos sobre miedos, preferencias sobre el viaje y herramientas. También tendrás un pequeño acompañamiento vía WhatsApp durante el inicio del viaje donde chequearemos cómo te vas sintiendo. Un año para poder gastar estas sesiones.</p>
+    </div>
+
+    <div class="bloque">
+      <h3>BLOQUE II</h3>
+      <p class="sub">Gastos de viaje SÍ incluidos en el presupuesto (≈800€)</p>
+      <p><b>“Se pagará directamente a los proveedores”.</b></p>
+      <ul>
+        <li>Alojamiento en habitaciones compartidas.</li>
+        <li>Traslados durante el viaje (algunos días serán coche privado con conductor, otras veces buses, ubers, etc. esto es un viaje de mochilera, es una estimación de todos los transportes que tendremos que coger).</li>
+        <li>Bus largo Salento–Medellín.</li>
+        <li>Desayuno incluido en Eje Cafetero y Medellín.</li>
+        <li>Comidas de 3 días, los dos días de avistamientos y el día del tour de mountain bike por las Carboneras.</li>
+        <li>Entrada a las Termas de Santa Rosa del Cabal, tour del café Doña Nelly, mountain bike por las Carboneras, Valle del Cocora, tour Comuna 13, 2 avistamientos de ballenas con tour por zona norte y sur de la costa del Chocó, conocer comunidad indígena en Emberá, museo de objetos ancestrales y un precio simbólico para dar al grupo de deporte de Nuquí.</li>
+        <li>Proveedores y guías locales.</li>
+      </ul>
+    </div>
+
+    <div class="bloque">
+      <h3>BLOQUE III</h3>
+      <p class="sub">Gastos de viaje NO incluidos</p>
+      <ul>
+        <li>Vuelos internacionales: ≈1300€ (sin equipaje)</li>
+        <li>Vuelos domésticos: ≈300€ (sin equipaje)</li>
+        <li>Seguro de viaje: ≈70€</li>
+        <li>Comidas, cenas, bebidas y cualquier otro gasto no incluido en el Bloque II.</li>
+        <li>Actividades opcionales no incluidas en itinerario (ej: buceo).</li>
+        <li>Posibles gastos imprevistos derivados de causas ajenas a la organización (retrasos, cancelaciones o condiciones meteorológicas adversas).</li>
+        <li>Propinas voluntarias.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<img class="presu-foto" src="../../assets/comuna-banner.jpg" alt="Mural urbano en Medellín">
+
+<section class="cta" id="reservar">
+  <div class="wrap">
+    <h2>¿Cómo me uno al viaje?</h2>
+    <p class="solicita">Solicita tu plaza aquí:</p>
+    <div class="botones">
+      <a class="btn btn-ghost" href="https://forms.gle/KkutoEV8uxcbQ6u17" target="_blank" rel="noopener">Rellena el formulario</a>
+      <span class="o">o</span>
+      <a class="btn btn-ghost" href="https://wa.me/34666732537?text=Hola%20Isa%2C%20me%20interesa%20el%20viaje%20a%20Colombia%20del%2028%20de%20septiembre%20al%2012%20de%20octubre.%20%C2%BFMe%20cuentas%20m%C3%A1s%3F" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    </div>
+    <div class="caja">
+      <h3>Antes de reservar, me gustaría conocerte.</h3>
+      <p>No es una entrevista, ni un examen.</p>
+      <p>Simplemente me gusta hablar con todas las personas que vienen al viaje.</p>
+      <p>Resolveremos dudas, me contarás qué esperas de esta experiencia y veremos si Tukki Legui encaja contigo, tanto como tú con el grupo.</p>
+      <p>Creo que cuando cuidamos el grupo desde el principio, el viaje empieza mucho antes de aterrizar en Colombia.</p>
+    </div>
+  </div>
+</section>
+
+<section class="isa" id="isa">
+  <img src="../../assets/isa.jpg" alt="Isa en una playa del Pacífico colombiano">
+  <div class="wrap">
+    <div class="tit">
+      <h2>Tu compañía</h2>
+      <span class="sub">en esta aventura.</span>
+    </div>
+    <h3>Hola, soy Isa</h3>
+    <p>Soy una persona muy dinámica y cercana. Me encanta conocer otras culturas y personas, creo que tengo la capacidad de leer bien a la gente y hacer sentir cómodas a las personas con las que comparto tiempo. Me encanta vivir la vida con pasión y al viajar, conseguir estar presente. No soy una persona a la que le guste tener todo atado, me encanta improvisar y probar comida nueva.</p>
+    <p>Llevo años trabajando en el ámbito social y la acción humanitaria. Quizá por eso, cuando viajo, me sale de forma natural intentar entender el contexto y cuestionarme la manera en la que lo hago. He vivido en Nicaragua y en Irlanda y he tenido el gran privilegio de viajar a muchos países tanto sola, como con mi pareja y con amigas.</p>
+    <p>Esto me ha llevado a entender de primera mano lo que supone viajar siendo mujer y perteneciendo al colectivo LGTBQIA+. Después de mucho buscar, me di cuenta de que ni mis amigas ni yo encontrábamos viajes organizados donde hubiera aventura, naturaleza e inmersión cultural y, a la vez, fueran un espacio donde sentirnos cómodas siendo nosotras mismas y en el que realmente nos sintiéramos representadas.</p>
+    <p class="final">Así nació Tukki Legui.</p>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="faq-bloque">
+    <img class="faq-foto" src="../../assets/faq-side.jpg" style="object-position:left center"
+         alt="Puesto de plátanos en Colombia">
+    <div class="faq-texto">
+      <h2>Preguntas<br><span>frecuentes</span></h2>
+            <div class="q"><h4>Nunca he viajado sola. ¿Este viaje es para mí?</h4>
+      <p>Sí. De hecho, muchas de las mujeres que vienen tampoco lo han hecho antes.</p>
+      <p>Antes del viaje tendremos una videollamada para conocernos y resolver dudas. Además, cuidaré mucho que el grupo encaje para que todas podamos viajar tranquilas desde el primer día.</p>
+      <p>Mi intención es que vuelvas con más confianza para seguir viajando. Sola, acompañada o como te dé la gana.</p></div>
+      <div class="q"><h4>¿Es seguro viajar a Colombia?</h4>
+      <p>Es una de las preguntas que más me hacen y la respuesta es que depende de cómo viajes y por dónde te muevas, igual que ocurre en muchos otros países.</p>
+      <p>El itinerario está pensado teniendo en cuenta la seguridad en cada destino y trabajaremos con personas y proveedores de confianza. Antes del viaje también os compartiré recomendaciones para movernos con tranquilidad y entender mejor el contexto del país.</p></div>
+      <div class="q"><h4>¿Y si soy del colectivo LBTQ+? ¿Es un viaje seguro?</h4>
+      <p>Ese fue uno de los motivos por los que nació Tukki Legui. Antes de elegir un destino reviso el contexto social y legal respecto al colectivo LGTBQIA+, y durante el viaje incluiremos un encuentro con una asociación local para conocer cómo se vive allí la diversidad.</p>
+      <p>Además, cuido mucho la selección de las viajeras y de los proveedores con los que trabajamos para que el grupo sea un espacio donde podamos sentirnos cómodas, seguras y siendo nosotras mismas.</p></div>
+      <div class="q"><h4>¿Tengo que pertenecer al colectivo LBTQ+ para venir?</h4>
+      <p>Aunque Tukki Legui nace con la intención de crear un espacio especialmente pensado para mujeres LBTQ+, cualquier mujer que conecte con esta forma de viajar y comparta los valores del proyecto será bienvenida.</p></div>
+    </div>
+  </div>
+  <div class="faq-bloque invertido">
+    <div class="faq-texto">
+            <div class="q"><h4>¿Habrá tiempo libre o está todo organizado al minuto?</h4>
+      <p>Habrá un itinerario preparado, pero no quiero que vivamos el viaje mirando constantemente el reloj.</p>
+      <p>Me gusta dejar espacio para improvisar, cambiar un plan porque ha surgido otro mejor, quedarnos un rato más en un sitio que nos está encantando o simplemente descansar si eso es lo que el grupo necesita.</p>
+      <p>Creo que algunos de los mejores recuerdos de un viaje aparecen precisamente cuando dejamos un poco de margen para que pasen cosas.</p></div>
+      <div class="q"><h4>¿Tengo que estar muy en forma?</h4>
+      <p>Es un viaje activo: caminaremos, montaremos en bici, nos moveremos bastante y probablemente algún día acabemos cansadas. Pero no necesitas una preparación física especial. Si tienes alguna duda concreta sobre este tema, escríbeme y la vemos juntas.</p></div>
+      <div class="q"><h4>¿Puedo hablar contigo antes de reservar?</h4>
+      <p>Claro. De hecho, me encanta hacerlo. Si tienes cualquier duda, quieres saber si este viaje encaja contigo o, simplemente, ponerme cara antes de decidirte, escríbeme. Estaré encantada de hablar contigo.</p></div>
+      <div class="q"><h4>¿Es obligatorio usar el bonus si viajo en grupo?</h4>
+      <p>Para nada. Pero me encantaría poder fomentar esas ganas de seguir viajando y reducir miedos, por eso este bonus es para echar una mano a aquellas viajeras que lleven tiempo pensando en empezar a viajar sola.</p></div>
+      <div class="q"><h4>¿Hay una edad mínima o máxima para venir?</h4>
+      <p>No. Es verdad que, por el tipo de viaje, probablemente la mayoría de las viajeras estén entre los 25 y los 45 años. Pero no es una norma ni mucho menos. De hecho, me encanta que los grupos sean diversos también en eso. Creo que viajar con mujeres de edades diferentes hace que aparezcan conversaciones, aprendizajes y formas de mirar el mundo que difícilmente surgirían en un grupo donde todas fuéramos iguales.</p>
+      <p>Al final, lo que une este viaje no es la edad. Es la forma de viajar.</p></div>
+      <div class="faq-pie">
+        <a class="btn" href="#reservar">Solicita tu plaza</a>
+        <img src="../../assets/logo.png" alt="Tukki Legui">
+      </div>
+    </div>
+    <img class="faq-foto" src="../../assets/faq-side.jpg" style="object-position:right center"
+         alt="Báscula en un puesto de mercado">
+  </div>
+</section>
+
+<footer>
+  <div class="cierre-final">
+    <div class="marco">
+      <img src="../../assets/cierre.jpg" alt="Isa en las murallas de Cartagena">
+      <img class="logo" src="../../assets/logo-white.png" alt="Tukki Legui">
+      <span class="firma">Tu Colegui&nbsp;;)</span>
+    </div>
+  </div>
+  <div class="pie">
+    <div class="wrap">
+      <div class="pie-cols">
+        <div class="pie-marca">
+          <img src="../../assets/logo-white.png" alt="Tukki Legui">
+          <p>Viajes para mujeres LBTQ+ con aventura, naturaleza e inmersión cultural,
+             y sitio para ser una misma.</p>
+        </div>
+        <div>
+          <h4>El viaje</h4>
+          <ul>
+            <li><a href="#viaje">Qué vivimos</a></li>
+            <li><a href="#ruta">La ruta</a></li>
+            <li><a href="#presupuesto">Presupuesto</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        <div class="contacto">
+          <h4>Hablamos</h4>
+          <ul>
+            <li><a href="https://wa.me/34666732537?text=Hola%20Isa%2C%20me%20interesa%20el%20viaje%20a%20Colombia%20del%2028%20de%20septiembre%20al%2012%20de%20octubre.%20%C2%BFMe%20cuentas%20m%C3%A1s%3F" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.2-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.4 0-.5.1-.7l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.4-1.1 1.2-1.1 2.8s1.2 3.2 1.3 3.5a12 12 0 0 0 4.7 4.1c1.8.7 2.2.6 2.6.5.6 0 1.7-.7 2-1.4s.3-1.3.2-1.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 4.3 15.1l-.3.2-3.1.8.8-3-.2-.3A8.2 8.2 0 0 1 12 3.8"/></svg>
+              WhatsApp</a></li>
+            <li><a href="mailto:tukkilegui@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1m1.4 2L12 12.3 19.6 7zM20 17V8.6l-7.4 5.2a1 1 0 0 1-1.2 0L4 8.6V17z"/></svg>
+              tukkilegui@gmail.com</a></li>
+            <li><a href="#reservar">Solicita tu plaza</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pie-fin">
+        <small>© 2026 Tukki Legui · Isabel Plaza Paniagua</small>
+        <nav>
+          <a href="../../politica-privacidad.html">Privacidad</a>
+          <a href="../../condiciones-contratacion.html">Condiciones de contratación</a>
+          <a href="../../politica-cookies.html">Cookies</a>
+          <a href="../../aviso-legal.html">Aviso legal</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var barra = document.querySelector('nav');
+  var boton = barra.querySelector('.hamburguesa');
+  function cerrar(){ barra.classList.remove('abierto'); boton.setAttribute('aria-expanded','false'); }
+  boton.addEventListener('click', function(){
+    var abierto = barra.classList.toggle('abierto');
+    boton.setAttribute('aria-expanded', String(abierto));
+    boton.setAttribute('aria-label', abierto ? 'Cerrar menú' : 'Abrir menú');
+  });
+  barra.querySelectorAll('#menu a').forEach(function(a){ a.addEventListener('click', cerrar); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') cerrar(); });
+})();
+</script>
+</body>
+</html>
