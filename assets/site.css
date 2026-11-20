@@ -292,11 +292,10 @@ nav.abierto .hamburguesa span:nth-child(3){transform:translateY(-10px) rotate(-4
 
 /* ══ variantes para la landing de México ═══════════ */
 
-/* portada: titular en tres líneas + MÉXICO, en serif */
-/* titular en rejilla: fila 1 a todo el ancho; filas 2 y 3 con MÉXICO en la segunda columna.
+/* portada: MÉXICO en serif + "DESDE UNA MIRADA" a su lado; debajo, la segunda línea a todo el ancho.
    Cada línea se justifica para llenar su columna, como en la guía */
-.portada-mx .titular{display:grid;grid-template-columns:1fr auto;grid-template-areas:"a a" "b m" "c m";
-  column-gap:.35em;row-gap:.22em;align-items:end;max-width:19em;
+.portada-mx .titular{display:grid;grid-template-columns:auto 1fr;grid-template-areas:"m b" "c c";
+  column-gap:.45em;row-gap:.3em;align-items:end;max-width:17em;
   font-family:var(--sans);font-weight:300;line-height:1.04;
   font-size:clamp(16px,2.7vw,33px);letter-spacing:-.01em;color:var(--ink);margin:0}
 .portada-mx .lineas{display:block;white-space:nowrap;text-align:justify;text-align-last:justify}
@@ -444,3 +443,14 @@ nav .sub{display:none;list-style:none;margin:0;padding:0}
     padding-left:20px;padding-right:20px}
   .isa .wrap{padding-left:0;padding-right:0}
 }
+
+/* presupuesto: Bloque II con una foto vertical a la izquierda, como en la guía */
+.bloque.con-foto{display:grid;grid-template-columns:150px 1fr;gap:30px;align-items:stretch}
+.bloque.con-foto>img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+@media(max-width:620px){.bloque.con-foto{grid-template-columns:1fr;gap:20px}
+  .bloque.con-foto>img{height:150px;object-position:center 40%}}
+
+/* titular de la portada: sin justificar, para que la segunda línea no abra huecos entre palabras */
+.portada-mx .titular{width:max-content;max-width:100%}
+.portada-mx .titular .lineas{text-align:left;text-align-last:auto;font-weight:800}
+.portada-mx .fila-2{padding-bottom:.18em}
